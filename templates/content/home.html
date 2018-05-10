@@ -1,0 +1,139 @@
+<div id="scarlett-core-feature">
+    <div class="container">
+        <div class="row">
+            <div class="features">
+                <div class="col-half animate-box" data-animate-effect="fadeInLeft">
+                    <div class="table-c">
+                        <div class="desc">
+                            <span>About me</span>
+                            <h3>I am Scarlett a Software Engineer</h3>
+                            <p>
+                                Hello, I am Scarlett a {{ age }} year old Dutch software engineer.
+                                I work mainly as Git master and DevOps at the moment but also develop Python(3) and PHP applications.
+
+                            </p>
+                            <p><a href="#" class="btn btn-lg btn-primary">Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-half-image-holder animate-box" data-animate-effect="fadeInRight">
+                    <img class="img-responsive" src="{{ url_for('static', filename='images/avatar.png')}}" alt="samsung">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="scarlett-services" class="scarlett-bg-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 text-center">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i class="icon-git"></i>
+						</span>
+                    <h3>GIT <3</h3>
+                    <p>I am a hugh proponent of GIT, I mostly take the responsibility to do the code mergers and make sure the proper workflow are followed.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 text-center">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i class="icon-tux"></i>
+						</span>
+                    <h3>DevOps</h3>
+                    <p>For my current clients I manage/design their servers mostly web and application, I mostly specialise on linux servers with Debian(derivatives).</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 text-center">
+                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+						<span class="icon">
+							<i class="icon-keyboard"></i>
+						</span>
+                    <h3>Programming</h3>
+                    <p>I have been involved in a lot of different projects ranging from clothing stores like zoekarssen.com to large organisations like sidn.nl and also written a lot of tools and libraries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="scarlett-project">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center scarlett-heading">
+                <span>Some of my things.</span>
+                <h2>Projects</h2>
+                <p>Most of these projects I have created/managed the backend and/or the servers.</p>
+            </div>
+        </div>
+    </div>
+    <div class="project-content">
+        <div class="col-half">
+            <div class="project animate-box" style="background-image:url({{ url_for('static', filename='images/project_zk.png')}});">
+                <div class="desc">
+                    <span>Server/Git management (Ubuntu/Git)</span>
+                    <h3>Zoekarssen.com</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-half">
+            <div class="project-grid animate-box" style="background-image:url({{ url_for('static', filename='images/project_supportdesk.png')}});">
+                <div class="desc">
+                    <span>Toolbox (Python)</span>
+                    <h3>Supportdesk.nu - Internal Toolbox (deployer, &hellip;)</h3>
+                </div>
+            </div>
+            <div class="project-grid animate-box" style="background-image:url({{ url_for('static', filename='images/project_homedna.png')}});">
+                <div class="desc">
+                    <span>Backend Development (PHP)</span>
+                    <h3>Homedna - Platform</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="scarlett-testimonial" class="scarlett-bg-section">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center scarlett-heading">
+                <h2>People I have worked with.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row">
+                    <div class="col-md-12 animate-box">
+                        <div class="testimony">
+                            <div class="inner text-center">
+                                <img src="{{ url_for('static', filename='images/person_rachell.jpg')}}" alt="testimony">
+                            </div>
+                            <blockquote>
+                                <p>&ldquo;Scarlett is one of the better developers I've worked with so far. She has a knack for coming up with creative solutions and explaining them in a way anyone can understand (whether you have a background in coding or not).
+                                    A very pleasant person to work with, as a colleague and towards the customers/clients.&rdquo;</p>
+                                <p class="author"><cite>&mdash;Rachel Tjong-A-Hung</cite></p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="scarlett-started">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center scarlett-heading">
+                <h2>Contact me</h2>
+                <p>If you would like to contact me pertaining to any projects that you are directly (no recruiters) involved in, please contact me.</p>
+            </div>
+        </div>
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2">
+                <form class="form-inline">
+                    <div class="col-md-6 col-md-offset-3 col-sm-6">
+                        <button type="submit" class="btn btn-default btn-block">Contact</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}{% endblock %}
+</head>
+<body>
+<div class="scarlett-loader"></div>
+<div id="page">
+    {% include 'partiales/header.html' %}
+    <header id="scarlett-header" class="scarlett-cover" role="banner">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    <div class="display-t">
+                        <div class="display-tc animate-box" data-animate-effect="fadeIn">
+                            <h1 class="typed">I am Scarlett</h1>
+                            <h2>I create software for a living and sometimes for fun.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="content" class="content-container">{% block content %}{% endblock %}</div>
+    <footer id="scarlett-footer" role="contentinfo">
+        {% block footer %}{% endblock %}
+    </footer>
+</div>
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+</body>
+</html>
